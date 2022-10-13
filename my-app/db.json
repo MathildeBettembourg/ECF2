@@ -1,12 +1,42 @@
 {
   "locataires": [
     {
-      "nom": "ccccffffffff",
-      "prenom": "ccccffffff",
-      "dateDeNaissance": "ccccffffff",
-      "email": "cccffffff",
-      "telephone": "cccffffff",
+      "nom": "vxwwxxwx",
+      "prenom": "xxx",
+      "dateDeNaissance": "xxx",
+      "email": "xxx",
+      "telephone": "xx",
+      "id": 5
+    },
+    {
+      "nom": "ccc",
+      "prenom": "ccc",
+      "dateDeNaissance": "ccc",
+      "email": "ccc",
+      "telephone": "ccc",
+      "id": 7
+    }
+  ],
+  "vehicules": [
+    {
+      "marque": "test",
+      "modele": "test",
+      "immatriculation": "test",
+      "etat": "test",
+      "prix": "22",
+      "disponibilite": "test",
+      "type": "test",
       "id": 3
+    },
+    {
+      "marque": "test",
+      "modele": "test",
+      "immatriculation": "test",
+      "etat": "test",
+      "prix": "22",
+      "disponibilite": "test",
+      "type": "test",
+      "id": 4
     }
   ]
 }

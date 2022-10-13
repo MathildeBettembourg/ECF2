@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
 }
 
 code {
@@ -22,4 +24,16 @@ code {
 .logoSize{
   height: 5%;
   width: 5%;
+}
+.displayAddButton{
+  display: flex;
+  flex-direction: row;
+}
+.mainTitle{
+  display: flex;
+    flex-direction: row;
+    height: 10%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
 }

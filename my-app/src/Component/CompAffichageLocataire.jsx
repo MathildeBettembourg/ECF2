@@ -32,7 +32,7 @@ const deleteLocataire=(event)=>{
                         <Card.Text>Telephone :{props.locataire.telephone}</Card.Text>
                         <div className="buttonOnCards">
                         <Button variant="primary"><Link to={`/CompModifLocataire/${props.locataire.id}`}> Modifier</Link></Button>
-                        <Button variant="success">Details</Button>
+                        <Button variant="success"><Link to={`/CompDetail/${props.locataire.id}`}>Details</Link></Button>
                         <Button variant="danger" onClick={deleteLocataire}>Supprimer</Button>
                         </div>
         </blockquote>
