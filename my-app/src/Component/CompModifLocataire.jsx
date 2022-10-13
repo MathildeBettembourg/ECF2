@@ -10,12 +10,23 @@ export const CompModifLocataire = (props) => {
     const params= useParams();
     const [changedLocataire, setChangedLocataire] = useState({})
 
+
+    /**
+     * Le use effect ici permet, à la création du composant de,
+     * recupere les données de l'id selectionné et de la stocker dans un objet
+     */
     useEffect(()=>{
         service.seeLocatairesById(params.id).then((res)=> setChangedLocataire(res))
 }, [])
 
 
-
+/******************************************************************************************
+ * Fonctions handle change permettent de mettre à jours les données du locataire si l'utilisateur le souhaite.
+ * elles fonctionnent toutes de la même fonction :
+ * - spread sur l'objet, 
+ * - mise à jour de la valeur si besoin
+ * @param {*} event 
+ */
     const handleChangeNom = (event) => {
         setChangedLocataire({...changedLocataire, nom:event.target.value})
     }
@@ -36,7 +47,11 @@ export const CompModifLocataire = (props) => {
         setChangedLocataire({...changedLocataire, telephone:event.target.value})
     }
 
-
+/***************************************
+ * Fonction handle click
+ * ici on va aller chercher le service put qui permet de modifier les données d'un element ciblé grâce à son id
+ * @param {*} event 
+ */
     const handleClick = (event) => {
         service.modifierLocataires(changedLocataire, params.id)
      }

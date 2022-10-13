@@ -9,11 +9,20 @@ export const CompAffichageVehicule = (props) => {
 
     const [vehicule, setVehicule] = useState({})
 
+    /**
+     * DELETE Vehicule
+     * au clic sur le bouton on va appeler la fonction parent qui permet de supprimer un vehicule
+     * @param {*} event 
+     */
 const deleteVehicule=(event)=>{
     event.preventDefault()
     props.deleteVehicule(props.vehicule.id)
 }
 
+/**
+ * Le useEffect ici permet à l'init du composant de setter la valeur de l'objet 
+ * vehicule qui sera utilisé pour l'affichage
+ */
     useEffect(() => {
         setVehicule(props)
     }, [])

@@ -8,12 +8,19 @@ import {Link, Outlet} from "react-router-dom";
 export const CompAffichageLocataire = (props) => {
 
     const [locataire, setLocataire] = useState({})
-
+    /**
+     * deleteLocataire
+     * au clic sur le bouton on va appeler la fonction parent qui permet de supprimer un locataire
+     * @param {*} event 
+     */
 const deleteLocataire=(event)=>{
     event.preventDefault()
     props.deleteLocataire(props.locataire.id)
 }
-
+/**
+ * Le useEffect ici permet à l'init du composant de setter la valeur de l'objet 
+ * locataire qui sera utilisé pour l'affichage
+ */
     useEffect(() => {
         setLocataire(props)
     }, [])

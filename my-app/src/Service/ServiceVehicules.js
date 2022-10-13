@@ -32,7 +32,7 @@ export class ServiceVehicules{
         }
     /**
      * METHODE recuperation vehicules sur le serveur
-     * @returns vehicules par idgit checkout
+     * @returns vehicules par id
      */
         async seeVehiculesById(id){
             return await fetch(`http://localhost:3000/vehicules/${id}`)

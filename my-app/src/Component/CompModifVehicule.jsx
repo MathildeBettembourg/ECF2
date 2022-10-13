@@ -10,11 +10,23 @@ export const CompModifVehicule = (props) => {
     const params5= useParams();
     const [changedVehicule, setChangedVehicule] = useState({})
 
+    
+    /**
+     * Le use effect ici permet, à la création du composant de,
+     * recupere les données de l'id selectionné et de la stocker dans un objet
+     */
     useEffect(()=>{
         serviceVehicules.seeVehiculesById(params5.id).then((res)=> setChangedVehicule(res))
 }, [])
 
 
+/******************************************************************************************
+ * Fonctions handle change permettent de mettre à jours les données du locataire si l'utilisateur le souhaite.
+ * elles fonctionnent toutes de la même fonction :
+ * - spread sur l'objet, 
+ * - mise à jour de la valeur si besoin
+ * @param {*} event 
+ */
 const handleChangeMarque = (event) => {
     event.preventDefault();
     setChangedVehicule({...changedVehicule, marque:event.target.value})
@@ -44,7 +56,11 @@ const handleChangeType= (event) => {
     setChangedVehicule({...changedVehicule,  type:event.target.value})
 }
 
-
+/***************************************
+ * Fonction handle click
+ * ici on va aller chercher le service put qui permet de modifier les données d'un element ciblé grâce à son id
+ * @param {*} event 
+ */
 const handleClick = (event) => {
     serviceVehicules.modifierVehicules(changedVehicule, params5.id)
 }

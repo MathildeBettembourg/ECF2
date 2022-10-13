@@ -7,8 +7,18 @@ import { Link, Outlet } from "react-router-dom";
 import { serviceVehicules } from "../Service/ServiceVehicules";
 
 export const CompDetailVehicule = (props) => {
+    /**
+     * le useParams permet de recuperer l'id qui est l'adresse de la page et de ce fait on peut l'utiliser
+     */
     const params3 = useParams();
+
     const [detailVehicule, setDetailVehicule] = useState({});
+
+    /**
+     * le useEffect ici va, à l'initialisation du composant, 
+     * recuperer les information d'un véhicule grâce à son id.
+     * en return il va setter le state de detail vehicule qui sera utilisé pour l'affichage.
+     */
     useEffect(() => {
         serviceVehicules.seeVehiculesById(params3.id).then((res) => setDetailVehicule((res)))
     }, [])

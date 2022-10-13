@@ -37,3 +37,18 @@ code {
     align-items: center;
     justify-content: space-around;
 }
+.formDisplay{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: flex-end;
+}
+.blocForm{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+
+}
+

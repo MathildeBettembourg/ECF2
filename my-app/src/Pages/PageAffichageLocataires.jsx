@@ -11,6 +11,11 @@ export const PageAffichageLocataire = () => {
     const [locatairesList, setLocatairesList] = useState([]);
     const[isDisplayed, setIsDisplayed] = useState(false);
 
+    /**
+     * handleClichShow*******************
+     * Fonction changeant le state de isDisplayed qui permet d'afficher ou non le formulaire d'ajout
+     * @param {*} event 
+     */
     const handleClichShow=(event)=>{
         if(isDisplayed){
         setIsDisplayed(false)}
@@ -18,19 +23,33 @@ export const PageAffichageLocataire = () => {
             setIsDisplayed(true)
         }
     }
-
+/**getLocataires
+ * fonction qui permet, grâce au service, de récuperer les données du serveur json et de les setter 
+ */
     const getLocataires = () => {
         service.seeLocataires().then((res) => setLocatairesList(res))
     }
+/**DELETELOCATAIRE
+ * fonction qui permet grâce à l'id d'aller activer le service permettant de supprimer un element grâce a son id
+ * 
+ * @param {*} id 
+ */
+
     const deleteLocataire=(id)=>{
         service.deleteById(id).then(getLocataires())
     }
 
+    /**ADDLOCATAIRE
+     * Fonction qui permet d'aller chercher le service afin d'ajouter un element au json
+     * @param {*} Vehicules 
+     */
     const addLocataires=(locataire)=>{
         service.addLocataires(locataire).then(getLocataires())
     }
 
-
+/**USEEFFECT
+ * quand le composant est créé on appele la fonction pour recupere et setter des données
+ */
     useEffect(() => {
         getLocataires()
     },
