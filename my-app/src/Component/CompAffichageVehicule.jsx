@@ -29,6 +29,7 @@ const deleteVehicule=(event)=>{
 
     return (
         <>
+        <Button variant="secondary"><Link to={`/`} className="buttonText">Retours</Link></Button>
  <Card>
       <Card.Header>Vehicule</Card.Header>
       <Card.Body>
@@ -39,9 +40,9 @@ const deleteVehicule=(event)=>{
                         <Card.Text>Disponibilite: {props.vehicule.disponibilite} </Card.Text>
                         <Card.Text>Marque : {props.vehicule.marque} </Card.Text>
                         <div className="buttonOnCards">
-                        <Button variant="primary"><Link to={`/CompModifVehicule/${props.vehicule.id}`}> Modifier</Link></Button>
-                        <Button variant="success"><Link to={`/CompDetailVehicule/${props.vehicule.id}`}>Details</Link></Button>
-                        <Button variant="danger" onClick={deleteVehicule}>Supprimer</Button>
+                        <Button variant="primary"><Link to={`/CompModifVehicule/${props.vehicule.id}`} className="buttonText"> Modifier</Link></Button>
+                        <Button variant="success"><Link to={`/CompDetailVehicule/${props.vehicule.id}`} className="buttonText">Details</Link></Button>
+                        <Button variant="danger" onClick={deleteVehicule} className="buttonText">Supprimer</Button>
                         </div>
         </blockquote>
       </Card.Body>

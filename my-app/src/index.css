@@ -51,4 +51,20 @@ code {
   align-items: center;
 
 }
+.h1Title{
+  width: 95%;
+}
+.liens{
+  text-decoration: none;
+  color:black;
+}
+.titlePage{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+.buttonText{
+  color:white;
+  text-decoration: none;
+}
 

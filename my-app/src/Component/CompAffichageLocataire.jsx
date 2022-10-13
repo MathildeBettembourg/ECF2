@@ -40,7 +40,7 @@ const deleteLocataire=(event)=>{
                         <div className="buttonOnCards">
                         <Button variant="primary"><Link to={`/CompModifLocataire/${props.locataire.id}`}> Modifier</Link></Button>
                         <Button variant="success"><Link to={`/CompDetail/${props.locataire.id}`}>Details</Link></Button>
-                        <Button variant="danger" onClick={deleteLocataire}>Supprimer</Button>
+                        <Button variant="danger" onClick={deleteLocataire} className="buttonText">Supprimer</Button>
                         </div>
         </blockquote>
       </Card.Body>

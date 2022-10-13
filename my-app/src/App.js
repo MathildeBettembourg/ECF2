@@ -27,15 +27,15 @@ function App() {
     <>
     <header className='mainTitle'>
     <img src={logoVelo}/>
-      <h1>Localib - Louer un véhicule en toute liberté</h1>
+      <h1 className='h1Text'>Localib - Louer un véhicule en toute liberté</h1>
     </header>
       <Router>
       <Navbar bg="light" variant="light">
         <Container>
           <Navbar.Brand Link to="/PageAffichageLocataire">Home</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link><Link to="/PageAffichageLocataire">Gestion des Locataires</Link></Nav.Link>
-            <Nav.Link><Link to="/PageAffichageVehicules">Gestion des véhicules</Link></Nav.Link>
+            <Nav.Link><Link to="/PageAffichageLocataire" className='liens'>Gestion des Locataires</Link></Nav.Link>
+            <Nav.Link><Link to="/PageAffichageVehicules" className='liens'>Gestion des véhicules</Link></Nav.Link>
           </Nav>
         </Container>
       </Navbar>

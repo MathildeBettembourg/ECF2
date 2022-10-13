@@ -58,7 +58,7 @@ export const PageAffichageLocataire = () => {
 
     return (
         <> 
-        <h1>Gestion des locataires</h1>
+        <h1 className="titlePage">Gestion des locataires</h1>
         <div className="displayAddButton"> 
         <p>Ajouter un locataire : </p>
         {isDisplayed?<> <CompAddLocataire addLocataires={addLocataires}/>  <Button variant="danger" onClick={handleClichShow}>-</Button></>: <Button variant="success" onClick={handleClichShow}>+</Button>}

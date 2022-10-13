@@ -59,7 +59,7 @@ export const PageAffichageVehicules= () => {
 
     return (
         <> 
-        <h1>Gestion des véhicules</h1>
+        <h1 className="titlePage">Gestion des véhicules</h1>
         <div className="displayAddButton"> 
         <p>Ajouter un véhicule : </p>
         {isDisplayed?<> <CompAddVehicule addVehicules={addVehicules}/>  <Button variant="danger" onClick={handleClichShow}>-</Button></>: <Button variant="success" onClick={handleClichShow}>+</Button>}
