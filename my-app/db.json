@@ -26,16 +26,6 @@
       "prix": "22",
       "disponibilite": "test",
       "type": "test",
-      "id": 3
-    },
-    {
-      "marque": "test",
-      "modele": "test",
-      "immatriculation": "test",
-      "etat": "test",
-      "prix": "22",
-      "disponibilite": "test",
-      "type": "test",
       "id": 4
     }
   ]

@@ -127,7 +127,7 @@ export const CompAddVehicule= (props) => {
                     <input type="text" onChange={handleChangeType} />
                     </div>
                 </form>
-                <Button variant="success" onClick={handleClick}>Ajouter</Button>
+                <Button variant="success" onClick={handleClick} className="buttonText">Ajouter</Button>
 
             </div>
         </>

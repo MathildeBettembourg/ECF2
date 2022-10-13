@@ -84,7 +84,7 @@ const handleClick = (event) => {
                     <label>Type</label>
                     <input type="text" onChange={handleChangeType} defaultValue={changedVehicule.type}/>
                 </form>
-                <Button variant="success" onClick={handleClick}>Modifier</Button>
+                <Button variant="success" onClick={handleClick} className="buttonText">Modifier</Button>
 
             </div>
         </>

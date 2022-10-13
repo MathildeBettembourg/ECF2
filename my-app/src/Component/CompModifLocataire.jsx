@@ -71,7 +71,7 @@ export const CompModifLocataire = (props) => {
                     <label>téléphone </label>
                     <input type="text" onChange={handleChangeTelephone}  defaultValue={changedLocataire.telephone} />
                 </form>
-                <Button variant="success" onClick={handleClick}>Modifier</Button>
+                <Button variant="success" onClick={handleClick} className="buttonText">Modifier</Button>
 
             </div>
         </>
