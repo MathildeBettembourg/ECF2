@@ -28,11 +28,11 @@ export class Service{
     async deleteById(id){
         return await fetch(`http://localhost:3000/locataires/${id}`, 
         { method: 'DELETE' })
-        .then((res) => console.log((res.json())));
+        .then((res) => ((res.json())));
     }
 /**
  * METHODE recuperation locataires sur le serveur
- * @returns locataires par id
+ * @returns locataires par idgit checkout
  */
     async seeLocatairesById(id){
         return await fetch(`http://localhost:3000/locataires/${id}`)
