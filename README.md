@@ -1,3 +1,3 @@
 # ECF2
-application licalib
+application licolib
 gestion des locataires et des véhicules
