@@ -1,0 +1,12 @@
+{
+  "locataires": [
+    {
+      "id": 1,
+      "nom": "Bettembourg",
+      "prenom": "Mathilde",
+      "dateDeNaissance": "12/00/1990",
+      "email": "caneseditpas@secret.fr",
+      "telephone": "007124"
+    }
+  ]
+}
