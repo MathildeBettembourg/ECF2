@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.displayCardLocataires{
+  display: flex;
+  flex-direction: column;
+}
+.buttonOnCards{
+  display: flex;
+  flex-direction: co;
+}
+.logoSize{
+  height: 5%;
+  width: 5%;
+}
