@@ -20,7 +20,6 @@ export const CompAddLocataire = (props) => {
             telephone: ""
         }
     )
-    const[count, setCount]=useState(0);
 
     const handleChangeNom = (event) => {
         event.preventDefault();
@@ -45,7 +44,6 @@ export const CompAddLocataire = (props) => {
 
 
     const handleClick = (event) => {
-        //setNewLocataire({...newLocataire, nom:nom, prenom:prenom, dateDeNaissance:dateDeNaissance, email:email, telephone:telephone })
         props.addLocataires(newLocataire)
     }
     

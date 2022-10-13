@@ -13,6 +13,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import PageAffichageLocataire from './Pages/PageAffichageLocataires';
+import CompModifLocataire from "../src/Component/CompModifLocataire"
+
 function App() {
   return (
     <>
@@ -30,6 +32,7 @@ function App() {
       <Routes>
         <Route path='/' element={<PageAffichageLocataire/>}/>
         <Route path='/PageAffichageLocataire' element={<PageAffichageLocataire/>}/>
+        <Route path='/CompModifLocataire/:id' element={<CompModifLocataire/>}/>
       </Routes>
       </Router>
     </>

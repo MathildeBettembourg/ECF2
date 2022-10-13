@@ -20,6 +20,7 @@ export const PageAffichageLocataire = () => {
         service.addLocataires(locataire).then(getLocataires())
     }
 
+
     useEffect(() => {
         getLocataires()
     },
