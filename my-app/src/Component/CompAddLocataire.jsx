@@ -24,28 +24,28 @@ export const CompAddLocataire = (props) => {
 
     const handleChangeNom = (event) => {
         event.preventDefault();
-        setNom(event.target.value)
+        setNewLocataire({...newLocataire, nom:event.target.value})
     }
     const handleChangePrenom = (event) => {
         event.preventDefault();
-        setPrenom(event.target.value)
+        setNewLocataire({...newLocataire, prenom:event.target.value})
     }
     const handleChangeDate = (event) => {
         event.preventDefault();
-        setDateDeNaissance(event.target.value)
+        setNewLocataire({...newLocataire, dateDeNaissance:event.target.value})
     }
     const handleChangeEmail = (event) => {
         event.preventDefault();
-        setEmail(event.target.value)
+        setNewLocataire({...newLocataire, email:event.target.value})
     }
     const handleChangeTelephone = (event) => {
         event.preventDefault();
-        setTelephone(event.target.value)
+        setNewLocataire({...newLocataire, telephone:event.target.value})
     }
 
 
     const handleClick = (event) => {
-        setNewLocataire({...newLocataire, nom:nom, prenom:prenom, dateDeNaissance:dateDeNaissance, email:email, telephone:telephone })
+        //setNewLocataire({...newLocataire, nom:nom, prenom:prenom, dateDeNaissance:dateDeNaissance, email:email, telephone:telephone })
         props.addLocataires(newLocataire)
     }
     
